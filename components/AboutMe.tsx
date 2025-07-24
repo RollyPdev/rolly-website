@@ -26,7 +26,7 @@ const AboutMe = () => {
   ];
 
   return (
-    <section id="about" className="relative max-w-6xl mx-auto px-6 py-16 overflow-hidden scroll-mt-24">
+    <section id="about" className="relative max-w-6xl mx-auto px-6 py-16 overflow-hidden scroll-mt-32">
 
 
       <motion.div

@@ -25,7 +25,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-24">
+    <section id="contact" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-32">
       <motion.div
         className="relative z-10"
         initial={{ opacity: 0 }}

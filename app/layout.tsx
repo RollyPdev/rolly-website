@@ -24,6 +24,31 @@ export const metadata: Metadata = {
   icons: {
     icon: "/loo.png",
   },
+  openGraph: {
+    title: "Rolly Paredes - Full-Stack Developer & Designer",
+    description: "Professional full-stack developer, graphic designer, and virtual assistant. Crafting digital excellence from code to canvas.",
+    url: "https://rollyparedes.com",
+    siteName: "Rolly Paredes Portfolio",
+    images: [
+      {
+        url: "/rollyparedes.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Rolly Paredes - Full-Stack Developer & Designer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rolly Paredes - Full-Stack Developer & Designer",
+    description: "Professional full-stack developer, graphic designer, and virtual assistant.",
+    images: ["/rollyparedes.jpg"],
+  },
+  alternates: {
+    canonical: "https://rollyparedes.com",
+  },
 };
 
 export default function RootLayout({

@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard";
 
 const DesignPortfolio = () => {
   return (
-    <section id="design-portfolio" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-24">
+    <section id="design-portfolio" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-32">
 
 
       <motion.div
