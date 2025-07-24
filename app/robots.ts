@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://rollyparedes.com/sitemap.xml',
+    sitemap: 'https://rollyparedes.net/sitemap.xml',
   }
 }

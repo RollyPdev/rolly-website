@@ -17,8 +17,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Rolly Paredes - Full-Stack Developer & Designer",
   description: "Professional full-stack developer, graphic designer, and virtual assistant. Crafting digital excellence from code to canvas with modern web technologies and creative design solutions.",
-  keywords: "full-stack developer, web developer, graphic designer, virtual assistant, React, Next.js, TypeScript, UI/UX design",
-  authors: [{ name: "Rolly Paredes" }],
+  keywords: "Rolly Ortiz Paredes,full-stack developer, web developer, graphic designer, virtual assistant, React, Next.js, TypeScript, UI/UX design",
+  authors: [{ name: "Rolly Ortiz Paredes" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   icons: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rolly Paredes - Full-Stack Developer & Designer",
     description: "Professional full-stack developer, graphic designer, and virtual assistant. Crafting digital excellence from code to canvas.",
-    url: "https://rollyparedes.com",
+    url: "https://rollyparedes.net",
     siteName: "Rolly Paredes Portfolio",
     images: [
       {
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     images: ["/rollyparedes.jpg"],
   },
   alternates: {
-    canonical: "https://rollyparedes.com",
+    canonical: "https://rollyparedes.net",
   },
   verification: {
     google: "av8dabb1ffQj9a-3z2ODoTcThcnDH9PJlhF_PpQZUaM",
