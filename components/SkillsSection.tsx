@@ -51,7 +51,7 @@ const skillCategories = [
 ];
 
 const SkillsSection = () => (
-  <section id="skills" className="relative max-w-6xl mx-auto px-6 py-16 overflow-hidden scroll-mt-32">
+  <section id="skills" className="relative max-w-6xl mx-auto px-6 py-16 overflow-hidden scroll-mt-24">
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}

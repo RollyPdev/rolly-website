@@ -13,7 +13,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-32">
+    <section id="services" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-24">
 
 
       <motion.div

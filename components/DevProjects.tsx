@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard";
 
 const DevProjects = () => {
   return (
-    <section id="dev-projects" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-32">
+    <section id="dev-projects" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-24">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div

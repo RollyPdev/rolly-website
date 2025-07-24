@@ -34,7 +34,7 @@ const Header = () => {
     
     const element = document.getElementById(sectionId);
     if (element) {
-      const headerHeight = 80;
+      const headerHeight = 96;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerHeight;
       
