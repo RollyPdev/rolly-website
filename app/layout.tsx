@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://rollyparedes.com",
   },
+  verification: {
+    google: "av8dabb1ffQj9a-3z2ODoTcThcnDH9PJlhF_PpQZUaM",
+  },
 };
 
 export default function RootLayout({
