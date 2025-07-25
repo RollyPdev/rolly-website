@@ -95,7 +95,7 @@ const Header = () => {
           >
             <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-xl blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             <div className="relative text-2xl font-bold tracking-tight bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent px-4 py-2 rounded-xl border border-slate-700/50 group-hover:border-slate-600/50 transition-all duration-300">
-              RP
+              RP<span className="text-red-500 animate-pulse drop-shadow-[0_0_8px_rgba(239,68,68,0.8)]">.</span>
             </div>
           </button>
         </motion.div>

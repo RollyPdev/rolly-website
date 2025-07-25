@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Rolly Paredes - Full-Stack Developer & Designer",
-  description: "Professional full-stack developer, graphic designer, and virtual assistant. Crafting digital excellence from code to canvas with modern web technologies and creative design solutions.",
+  description: "Hello! I'm Rolly O. Paredes, an experienced administrative professional. I specialize in training coordination, digital operations management, and creative problem-solving. My skills include streamlining scheduling, enhancing communication, and managing social media. I am proficient in virtual assistance, graphic design, funnel management, and web development, and I am committed to supporting organizational goals efficiently and with attention to detail.",
   keywords: "full-stack developer, web developer, graphic designer, virtual assistant, React, Next.js, TypeScript, UI/UX design",
   authors: [{ name: "Rolly Paredes" }],
   viewport: "width=device-width, initial-scale=1",
@@ -23,24 +23,33 @@ export const metadata: Metadata = {
   icons: {
     icon: "/loo.png",
   },
+  openGraph: {
+    title: "Rolly Paredes - Full-Stack Developer & Designer",
+    description: "Hello! I'm Rolly O. Paredes, an experienced administrative professional. I specialize in training coordination, digital operations management, and creative problem-solving. My skills include streamlining scheduling, enhancing communication, and managing social media. I am proficient in virtual assistance, graphic design, funnel management, and web development, and I am committed to supporting organizational goals efficiently and with attention to detail.",
+    url: "https://rollyparedes.net",
+    siteName: "Rolly Paredes Portfolio",
+    images: [
+      {
+        url: "https://rollyparedes.net/rollyparedes.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Rolly Paredes - Full-Stack Developer & Designer",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rolly Paredes - Full-Stack Developer & Designer",
+    description: "Hello! I'm Rolly O. Paredes, an experienced administrative professional specializing in training coordination, digital operations management, and creative problem-solving.",
+    images: ["https://rollyparedes.net/rollyparedes.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i+"?ref=bwt";
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "sk7ucl3gql");
-            `,
-          }}
-        />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Layout>{children}</Layout>
       </body>

@@ -40,6 +40,7 @@ export interface Certificate {
   date: string;
   credentialUrl: string;
   skills: string[];
+  imageUrl: string;
 }
 
 export const projects: Project[] = [
@@ -146,34 +147,38 @@ export const workExperience: WorkExperience[] = [
 export const certificates: Certificate[] = [
   {
     id: 'cert1',
-    title: 'JavaScript (Basic)',
+    title: 'Software Engineer',
     issuer: 'HackerRank',
-    date: '2024',
+    date: '2025-07-23',
     credentialUrl: 'https://www.hackerrank.com/certificates/iframe/f34dd5082f7d',
-    skills: ['JavaScript', 'Programming', 'Web Development']
+    skills: ['Software Engineer',],
+    imageUrl: '/images/softwareengineer.png'
   },
   {
     id: 'cert2',
-    title: 'Problem Solving (Basic)',
+    title: 'Rest API (Intermediate)',
     issuer: 'HackerRank',
-    date: '2024',
+    date: '2025-07-23',
     credentialUrl: 'https://www.hackerrank.com/certificates/iframe/a406dc3d047f',
-    skills: ['Problem Solving', 'Algorithms', 'Logic']
+    skills: ['est API (Intermediate)',],
+    imageUrl: '/images/resapi.png'
   },
   {
     id: 'cert3',
-    title: 'CSS (Basic)',
+    title: 'Problem Solving (Basic)',
     issuer: 'HackerRank',
-    date: '2024',
-    credentialUrl: 'https://www.hackerrank.com/certificates/iframe/a4348338e66f',
-    skills: ['CSS', 'Web Design', 'Frontend']
+    date: '2025-07-23',
+    credentialUrl: 'https://www.hackerrank.com/certificates/a4348338e66f',
+    skills: ['Problem Solving (Basic)',],
+    imageUrl: '/images/problem.png'
   },
   {
     id: 'cert4',
-    title: 'EF SET English Certificate',
-    issuer: 'EF Education First',
-    date: '2024',
+    title: 'English Certificate',
+    issuer: 'EF SET',
+    date: '2025-06-06',
     credentialUrl: 'https://cert.efset.org/en/QwFuK3',
-    skills: ['English Proficiency', 'Communication', 'Language']
+    skills: ['English Proficiency', 'Communication', "Listening", 'Language'],
+    imageUrl: '/images/engcert.png'
   }
 ]; 

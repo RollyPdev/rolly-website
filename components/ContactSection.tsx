@@ -3,6 +3,20 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { PaperPlaneIcon, EnvelopeClosedIcon, LinkedInLogoIcon, GitHubLogoIcon, InstagramLogoIcon, TwitterLogoIcon, ChatBubbleIcon } from "@radix-ui/react-icons";
 
+// Custom Facebook Icon
+const FacebookIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+  </svg>
+);
+
+// Custom Dribbble Icon
+const DribbbleIcon = ({ className }: { className?: string }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+    <path d="M12 0C5.374 0 0 5.374 0 12s5.374 12 12 12 12-5.374 12-12S18.626 0 12 0zm7.568 5.302c1.4 1.5 2.252 3.5 2.273 5.698-.653-.126-7.512-1.508-7.512-1.508s-.669-1.417-1.47-3.017c3.258-1.347 6.016-.642 6.709-.173zM12 2.151c2.75 0 5.25 1.1 7.1 2.9-.6-.4-3.1-1.1-6.6.2-.9-1.6-1.9-3-2.5-4.1zm-2.9.9c.6 1.1 1.6 2.5 2.5 4.1-3.1 1.2-5.8 1.2-7.2 1.2-.1-.4-.1-.8-.1-1.2 0-1.6.5-3.1 1.4-4.3 1.1.1 2.4.1 3.4.2zm-5.1 6.1c0-.1 0-.3 0-.4 1.5 0 4.6 0 8.1-1.4.6 1.2 1.1 2.4 1.4 3.6-4.1 1.1-7.5 4.2-9.5 7.2-1.4-1.5-2.3-3.5-2.3-5.7 0-1.1.2-2.2.6-3.2.6-.1 1.2-.1 1.7-.1zm2.9 10.2c1.9-2.6 4.8-5.4 8.3-6.3.8 2.2 1.3 4.5 1.4 6.9-1.4.6-2.9.9-4.5.9-1.9 0-3.7-.5-5.2-1.5zm7.9.7c-.1-2.2-.5-4.3-1.2-6.3 2.1-.3 4.3-.1 6.3.5-.4 2.4-1.7 4.5-3.6 5.9-.5-.1-1-.1-1.5-.1z"/>
+  </svg>
+);
+
 const ContactSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
@@ -18,10 +32,12 @@ const ContactSection = () => {
   };
 
   const socialLinks = [
-    { icon: LinkedInLogoIcon, href: "https://linkedin.com/in/rollyparedes", label: "LinkedIn", color: "from-blue-600 to-blue-500", hoverColor: "hover:text-blue-400" },
-    { icon: GitHubLogoIcon, href: "https://github.com/rollyparedes", label: "GitHub", color: "from-slate-600 to-slate-500", hoverColor: "hover:text-slate-300" },
-    { icon: InstagramLogoIcon, href: "#", label: "Instagram", color: "from-pink-600 to-purple-500", hoverColor: "hover:text-pink-400" },
-    { icon: TwitterLogoIcon, href: "#", label: "Twitter", color: "from-blue-500 to-cyan-500", hoverColor: "hover:text-blue-400" },
+    { icon: LinkedInLogoIcon, href: "https://www.linkedin.com/in/rolly-paredes-0247b028b/", label: "LinkedIn", color: "from-blue-600 to-blue-500", hoverColor: "hover:text-blue-400" },
+    { icon: GitHubLogoIcon, href: "https://github.com/RollyPdev", label: "GitHub", color: "from-slate-600 to-slate-500", hoverColor: "hover:text-slate-300" },
+    { icon: InstagramLogoIcon, href: "https://www.instagram.com/piierolly", label: "Instagram", color: "from-pink-600 to-purple-500", hoverColor: "hover:text-pink-400" },
+    { icon: TwitterLogoIcon, href: "https://x.com/ilyrolly", label: "Twitter", color: "from-blue-500 to-cyan-500", hoverColor: "hover:text-blue-400" },
+    { icon: FacebookIcon, href: "https://www.facebook.com/RollyParedesOrtiz", label: "Facebook", color: "from-blue-700 to-blue-600", hoverColor: "hover:text-blue-300" },
+    { icon: DribbbleIcon, href: "https://dribbble.com/rollyyyyyyy", label: "Dribbble", color: "from-pink-500 to-rose-500", hoverColor: "hover:text-pink-300" },
   ];
 
   return (
@@ -281,7 +297,7 @@ const ContactSection = () => {
                 Connect With Me
               </motion.h3>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={social.label}

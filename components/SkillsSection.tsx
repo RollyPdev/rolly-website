@@ -55,8 +55,8 @@ const SkillsSection = () => (
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      viewport={{ once: true }}
-      transition={{ staggerChildren: 0.15 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.3 }}
     >
       {/* Header */}
       <motion.div
@@ -72,15 +72,7 @@ const SkillsSection = () => (
         >
           <motion.div
             className="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center shadow-lg"
-            animate={{
-              rotate: [0, 10, -10, 0],
-              scale: [1, 1.1, 1]
-            }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "easeInOut"
-            }}
+            whileHover={{ scale: 1.05 }}
           >
             <CodeIcon className="w-8 h-8 text-white" />
           </motion.div>

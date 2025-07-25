@@ -6,7 +6,7 @@ import ServicesSection from "../components/ServicesSection";
 import SkillsSection from "../components/SkillsSection";
 import CertificatesSection from "../components/CertificatesSection";
 import ContactSection from "../components/ContactSection";
-import AnimatedSection from "../components/AnimatedSection";
+
 
 export default function Home() {
   return (
@@ -14,43 +14,43 @@ export default function Home() {
       {/* Background gradient */}
       <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 -z-10" />
       
-      {/* Animated background elements */}
+      {/* Optimized background elements */}
       <div className="fixed inset-0 overflow-hidden -z-10">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '2s' }} />
-        <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-green-500/5 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '4s' }} />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/3 rounded-full blur-2xl opacity-50" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-500/3 rounded-full blur-2xl opacity-50" />
+        <div className="absolute top-3/4 left-1/2 w-64 h-64 bg-green-500/3 rounded-full blur-2xl opacity-50" />
       </div>
 
       <HeroSection />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 space-y-32">
-        <AnimatedSection className="py-16" delay={0.1}>
+        <div className="py-16">
           <AboutMe />
-        </AnimatedSection>
+        </div>
         
-        <AnimatedSection className="py-16" delay={0.2}>
+        <div className="py-16">
           <DevProjects />
-        </AnimatedSection>
+        </div>
         
-        <AnimatedSection className="py-16" delay={0.1}>
+        <div className="py-16">
           <DesignPortfolio />
-        </AnimatedSection>
+        </div>
         
-        <AnimatedSection className="py-16" delay={0.2}>
+        <div className="py-16">
           <ServicesSection />
-        </AnimatedSection>
+        </div>
         
-        <AnimatedSection className="py-16" delay={0.1}>
+        <div className="py-16">
           <SkillsSection />
-        </AnimatedSection>
+        </div>
         
-        <AnimatedSection className="py-16" delay={0.2}>
+        <div className="py-16">
           <CertificatesSection />
-        </AnimatedSection>
+        </div>
         
-        <AnimatedSection className="py-16" delay={0.1}>
+        <div className="py-16">
           <ContactSection />
-        </AnimatedSection>
+        </div>
       </div>
     </div>
   );
