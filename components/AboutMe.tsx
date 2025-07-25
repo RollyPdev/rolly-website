@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { CodeIcon, DesktopIcon, BarChartIcon } from "@radix-ui/react-icons";
+import { CodeIcon, DesktopIcon, BarChartIcon, CalendarIcon, CheckIcon } from "@radix-ui/react-icons";
+import { workExperience } from "../data/portfolioData";
 
 const AboutMe = () => {
   const skills = [
@@ -153,6 +154,98 @@ const AboutMe = () => {
               </div>
             </motion.div>
           ))}
+        </motion.div>
+
+        {/* Work Experience Section */}
+        <motion.div
+          className="mt-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          <motion.h3 
+            className="text-3xl md:text-4xl font-bold mb-10 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="bg-gradient-to-r from-green-400 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+              Work Experience
+            </span>
+          </motion.h3>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 max-w-6xl mx-auto">
+            {workExperience.map((work, index) => (
+              <motion.div
+                key={work.id}
+                className="bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 group h-full"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                whileHover={{ scale: 1.02, y: -5 }}
+              >
+                {/* Header Section */}
+                <div className="mb-8 pb-6 border-b border-slate-700/50">
+                  <h4 className="text-xl md:text-2xl font-bold text-slate-100 mb-3 group-hover:text-blue-300 transition-colors leading-tight">
+                    {work.title}
+                  </h4>
+                  <p className="text-lg text-blue-400 font-semibold mb-3">
+                    {work.company}
+                  </p>
+                  <div className="flex items-center gap-2 text-slate-400">
+                    <CalendarIcon className="w-4 h-4" />
+                    <span className="text-sm font-medium">{work.dates}</span>
+                  </div>
+                </div>
+
+                {/* Responsibilities Section */}
+                <div className="mb-8">
+                  <h5 className="text-lg font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                    <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                    Key Responsibilities
+                  </h5>
+                  <ul className="space-y-3">
+                    {work.responsibilities.map((responsibility, idx) => (
+                      <motion.li 
+                        key={idx} 
+                        className="flex items-start gap-3 text-slate-300 group/item"
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ delay: index * 0.2 + idx * 0.1 }}
+                      >
+                        <CheckIcon className="w-4 h-4 text-green-400 mt-1 flex-shrink-0 group-hover/item:text-green-300 transition-colors" />
+                        <span className="text-sm leading-relaxed group-hover/item:text-slate-200 transition-colors">
+                          {responsibility}
+                        </span>
+                      </motion.li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Tools Section */}
+                <div>
+                  <h5 className="text-lg font-semibold text-slate-200 mb-4 flex items-center gap-2">
+                    <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
+                    Tools & Technologies
+                  </h5>
+                  <div className="flex flex-wrap gap-2">
+                    {work.tools.map((tool, toolIdx) => (
+                      <motion.span
+                        key={tool}
+                        className="bg-gradient-to-r from-slate-700/60 to-slate-600/60 border border-slate-600/50 text-slate-300 px-3 py-2 rounded-lg text-xs font-medium hover:from-blue-600/20 hover:to-purple-600/20 hover:border-blue-500/30 hover:text-blue-300 transition-all duration-300"
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: index * 0.2 + toolIdx * 0.05 }}
+                        whileHover={{ scale: 1.05 }}
+                      >
+                        {tool}
+                      </motion.span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </motion.div>
       </motion.div>
     </section>

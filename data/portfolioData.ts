@@ -24,6 +24,15 @@ export interface Service {
   description: string;
 }
 
+export interface WorkExperience {
+  id: string;
+  title: string;
+  company: string;
+  dates: string;
+  responsibilities: string[];
+  tools: string[];
+}
+
 export const projects: Project[] = [
   {
     id: 'dev1',
@@ -94,4 +103,33 @@ export const services: Service[] = [
     title: 'Virtual Assistance',
     description: 'Providing administrative support and organization for your business.',
   },
+];
+
+export const workExperience: WorkExperience[] = [
+  {
+    id: 'work1',
+    title: 'Review Program Coordinator/Administrator',
+    company: 'Coeus Review and Training Specialist, Inc.',
+    dates: '2023-2025',
+    responsibilities: [
+      'Coordinated review schedules for lecturers and students',
+      'Managed logistics such as appointments and seating',
+      'Handled social media for branding and updates',
+      'Assisted with internal operations for virtual learning'
+    ],
+    tools: ['Google Workspace', 'Zoom', 'Canva', 'Trello', 'Asana']
+  },
+  {
+    id: 'work2',
+    title: 'Graphic Designer / Social Media Manager / Web Designer',
+    company: 'Freelancer Jobs',
+    dates: '2018-2020',
+    responsibilities: [
+      'Created logos, branding kits, and web layouts',
+      'Managed client social media via content planning and ads',
+      'Conducted basic SEO and online marketing for visibility',
+      'Collaborated with development teams for website updates'
+    ],
+    tools: ['Adobe Photoshop', 'Illustrator', 'WordPress', 'Hootsuite', 'Mailchimp', 'HubSpot']
+  }
 ]; 
