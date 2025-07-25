@@ -41,7 +41,7 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-32">
+    <section id="contact" className="relative max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-16 overflow-hidden scroll-mt-32">
       <motion.div
         className="relative z-10"
         initial={{ opacity: 0 }}
@@ -297,7 +297,7 @@ const ContactSection = () => {
                 Connect With Me
               </motion.h3>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
                 {socialLinks.map((social, index) => (
                   <motion.a
                     key={social.label}

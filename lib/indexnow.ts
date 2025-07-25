@@ -1,4 +1,4 @@
-const INDEXNOW_KEY = 'a85a2aefb8e24833bd53ce707ed5814f';
+const INDEXNOW_KEY = '3da1000b90204433bfd0cb37fcc60829';
 const SITE_URL = 'https://rollyparedes.net';
 
 export async function submitToIndexNow(urls: string[]) {

@@ -7,7 +7,7 @@ import { certificates } from "../data/portfolioData";
 const CertificatesSection = () => {
 
   return (
-    <section id="certificates" className="relative max-w-7xl mx-auto px-6 py-16 overflow-hidden scroll-mt-32">
+    <section id="certificates" className="relative max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-16 overflow-hidden scroll-mt-32">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -57,7 +57,7 @@ const CertificatesSection = () => {
         </motion.div>
 
         {/* Certificates Inline */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
           {certificates.map((cert, index) => (
             <motion.div
               key={cert.id}

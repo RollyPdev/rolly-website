@@ -23,32 +23,32 @@ export default function Home() {
 
       <HeroSection />
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 space-y-32">
-        <div className="py-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 space-y-16 sm:space-y-24 lg:space-y-32">
+        <div className="py-8 sm:py-12 lg:py-16">
           <AboutMe />
         </div>
         
-        <div className="py-16">
+        <div className="py-8 sm:py-12 lg:py-16">
           <DevProjects />
         </div>
         
-        <div className="py-16">
+        <div className="py-8 sm:py-12 lg:py-16">
           <DesignPortfolio />
         </div>
         
-        <div className="py-16">
+        <div className="py-8 sm:py-12 lg:py-16">
           <ServicesSection />
         </div>
         
-        <div className="py-16">
+        <div className="py-8 sm:py-12 lg:py-16">
           <SkillsSection />
         </div>
         
-        <div className="py-16">
+        <div className="py-8 sm:py-12 lg:py-16">
           <CertificatesSection />
         </div>
         
-        <div className="py-16">
+        <div className="py-8 sm:py-12 lg:py-16">
           <ContactSection />
         </div>
       </div>
