@@ -1,7 +1,12 @@
 const INDEXNOW_KEY = 'a85a2aefb8e24833bd53ce707ed5814f';
 const SITE_URL = 'https://rollyparedes.net';
 
-export async function submitToIndexNow(urls: string[]) {
+const urls = [
+  'https://rollyparedes.net',
+  'https://rollyparedes.net/sitemap.xml'
+];
+
+async function submitToIndexNow() {
   const payload = {
     host: 'rollyparedes.net',
     key: INDEXNOW_KEY,
@@ -18,9 +23,14 @@ export async function submitToIndexNow(urls: string[]) {
       body: JSON.stringify(payload)
     });
 
-    return response.ok;
+    if (response.ok) {
+      console.log('✅ URLs successfully submitted to IndexNow');
+    } else {
+      console.log('❌ IndexNow submission failed:', response.status);
+    }
   } catch (error) {
-    console.error('IndexNow submission failed:', error);
-    return false;
+    console.error('❌ IndexNow submission error:', error);
   }
 }
+
+submitToIndexNow();

@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "node scripts/submit-indexnow.js",
+    "indexnow": "node scripts/submit-indexnow.js"
   },
   "dependencies": {
     "@radix-ui/react-icons": "^1.3.2",
