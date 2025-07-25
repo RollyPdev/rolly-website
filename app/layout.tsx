@@ -42,7 +42,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rolly Paredes - Full-Stack Developer & Designer",
-    description: "Hello! I'm Rolly O. Paredes, an experienced administrative professional specializing in training coordination, digital operations management, and creative problem-solving.",
+    description: "Hello! I'm Rolly O. Paredes, an experienced administrative professional. I specialize in training coordination, digital operations management, and creative problem-solving. My skills include streamlining scheduling, enhancing communication, and managing social media. I am proficient in virtual assistance, graphic design, funnel management, and web development, and I am committed to supporting organizational goals efficiently and with attention to detail.",
     images: ["https://rollyparedes.net/rollyparedes.jpg"],
   },
 };
