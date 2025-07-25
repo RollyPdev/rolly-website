@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ExternalLinkIcon, GitHubLogoIcon, EyeOpenIcon } from "@radix-ui/react-icons";
 import type { Project, DesignPiece } from "../data/portfolioData";
+import ImageModal from "./ImageModal";
 
 // Union type for props
 export type ProjectCardProps =
@@ -12,6 +13,7 @@ export type ProjectCardProps =
 
 const ProjectCard: React.FC<{ project: ProjectCardProps }> = ({ project }) => {
   const isDev = project.type === "dev";
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <motion.div
@@ -125,6 +127,7 @@ const ProjectCard: React.FC<{ project: ProjectCardProps }> = ({ project }) => {
             </>
           ) : (
             <motion.button
+              onClick={() => setIsModalOpen(true)}
               className="w-full bg-gradient-to-r from-purple-600 to-purple-500 text-white px-4 py-3 rounded-xl text-sm font-semibold shadow-lg hover:shadow-purple-500/25 focus:outline-none focus:ring-2 focus:ring-purple-400/50 transition-all duration-300 flex items-center justify-center gap-2"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -136,6 +139,18 @@ const ProjectCard: React.FC<{ project: ProjectCardProps }> = ({ project }) => {
           )}
         </motion.div>
       </div>
+      
+      {/* Modal for design pieces */}
+      {!isDev && (
+        <ImageModal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          imageUrl={project.imageUrl}
+          title={project.title}
+          description={project.description}
+          tools={project.tools}
+        />
+      )}
     </motion.div>
   );
 };

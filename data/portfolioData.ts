@@ -57,24 +57,24 @@ export const projects: Project[] = [
 export const designPieces: DesignPiece[] = [
   {
     id: 'design1',
-    title: 'Brand Logo',
-    description: 'A modern and minimalistic logo for a tech startup.',
-    imageUrl: 'https://placehold.co/600x400/000000/FFFFFF?text=Design+Image',
-    tools: ['Adobe Illustrator', 'Figma'],
+    title: 'E-sports Banner',
+    description: 'Event banner design for the "Clash of Barangays MLBB 2K24 Tournament," demonstrating effective layout, typography, and brand integration for a local esports event',
+    imageUrl: '/images/esports.jpg',
+    tools: ['Adobe Illustrator', 'Photoshop'],
   },
   {
     id: 'design2',
-    title: 'Event Poster',
-    description: 'A vibrant poster design for a music festival.',
-    imageUrl: 'https://placehold.co/600x400/000000/FFFFFF?text=Design+Image',
-    tools: ['Adobe Photoshop', 'Canva'],
+    title: 'Clash of Barangays: Official Shoutcasters',
+    description: 'Event graphic showcasing official shoutcasters for an esports tournament, demonstrating effective use of imagery, text hierarchy, and branding.',
+    imageUrl: '/images/ casters.png',
+    tools: ['Adobe Photoshop'],
   },
   {
     id: 'design3',
-    title: 'Business Card',
-    description: 'A sleek business card design for a consulting firm.',
-    imageUrl: 'https://placehold.co/600x400/000000/FFFFFF?text=Design+Image',
-    tools: ['Figma', 'Adobe InDesign'],
+    title: 'Coeus Review: National Online Review for School Heads',
+    description: 'Designed a promotional graphic for the "National Online Review for School Heads (NQEHS 2024)" by Coeus Review and Training Specialists, Inc. This visual effectively highlights key program details, benefits, and contact information, aiming to attract school heads for professional development.',
+    imageUrl: '/images/promo.png',
+    tools: ['Adobe Photoshop',],
   },
 ];
 

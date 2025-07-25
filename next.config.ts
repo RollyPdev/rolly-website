@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   compress: true,
   images: {
-    domains: ["placehold.co"],
+    domains: ["placehold.co", "drive.google.com"],
   },
   headers: async () => {
     return [
