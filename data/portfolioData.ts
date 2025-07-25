@@ -33,6 +33,15 @@ export interface WorkExperience {
   tools: string[];
 }
 
+export interface Certificate {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  credentialUrl: string;
+  skills: string[];
+}
+
 export const projects: Project[] = [
   {
     id: 'dev1',
@@ -131,5 +140,40 @@ export const workExperience: WorkExperience[] = [
       'Collaborated with development teams for website updates'
     ],
     tools: ['Adobe Photoshop', 'Illustrator', 'WordPress', 'Hootsuite', 'Mailchimp', 'HubSpot']
+  }
+];
+
+export const certificates: Certificate[] = [
+  {
+    id: 'cert1',
+    title: 'JavaScript (Basic)',
+    issuer: 'HackerRank',
+    date: '2024',
+    credentialUrl: 'https://www.hackerrank.com/certificates/iframe/f34dd5082f7d',
+    skills: ['JavaScript', 'Programming', 'Web Development']
+  },
+  {
+    id: 'cert2',
+    title: 'Problem Solving (Basic)',
+    issuer: 'HackerRank',
+    date: '2024',
+    credentialUrl: 'https://www.hackerrank.com/certificates/iframe/a406dc3d047f',
+    skills: ['Problem Solving', 'Algorithms', 'Logic']
+  },
+  {
+    id: 'cert3',
+    title: 'CSS (Basic)',
+    issuer: 'HackerRank',
+    date: '2024',
+    credentialUrl: 'https://www.hackerrank.com/certificates/iframe/a4348338e66f',
+    skills: ['CSS', 'Web Design', 'Frontend']
+  },
+  {
+    id: 'cert4',
+    title: 'EF SET English Certificate',
+    issuer: 'EF Education First',
+    date: '2024',
+    credentialUrl: 'https://cert.efset.org/en/QwFuK3',
+    skills: ['English Proficiency', 'Communication', 'Language']
   }
 ]; 

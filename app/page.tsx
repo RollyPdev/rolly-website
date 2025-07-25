@@ -4,6 +4,7 @@ import DevProjects from "../components/DevProjects";
 import DesignPortfolio from "../components/DesignPortfolio";
 import ServicesSection from "../components/ServicesSection";
 import SkillsSection from "../components/SkillsSection";
+import CertificatesSection from "../components/CertificatesSection";
 import ContactSection from "../components/ContactSection";
 import AnimatedSection from "../components/AnimatedSection";
 
@@ -44,6 +45,10 @@ export default function Home() {
         </AnimatedSection>
         
         <AnimatedSection className="py-16" delay={0.2}>
+          <CertificatesSection />
+        </AnimatedSection>
+        
+        <AnimatedSection className="py-16" delay={0.1}>
           <ContactSection />
         </AnimatedSection>
       </div>
