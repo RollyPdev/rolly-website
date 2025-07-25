@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "Rolly Paredes Portfolio",
     images: [
       {
-        url: "https://opengraph.b-cdn.net/production/images/64b16b87-ec81-4889-99e7-ec80197ace46.jpg?token=ROdNsMvMPMDDge9xfDf1cOnifU5wjrTfJop7ilEOngk&height=960&width=640&expires=33289418766",
+        url: "https://opengraph.b-cdn.net/production/images/f389f443-ca86-4893-b616-2c33ce3901aa.png?token=mMxIb8BfXFIRFfVhWoquy6UOYjvOpyyiA1sayGZsLpg&height=630&width=1200&expires=33289419599",
         width: 1200,
         height: 630,
         alt: "Rolly Paredes - Full-Stack Developer & Designer",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rolly Paredes - Full-Stack Developer & Designer",
     description: "Hello! I'm Rolly O. Paredes, an experienced administrative professional. I specialize in training coordination, digital operations management, and creative problem-solving. My skills include streamlining scheduling, enhancing communication, and managing social media. I am proficient in virtual assistance, graphic design, funnel management, and web development, and I am committed to supporting organizational goals efficiently and with attention to detail.",
-    images: ["https://opengraph.b-cdn.net/production/images/64b16b87-ec81-4889-99e7-ec80197ace46.jpg?token=ROdNsMvMPMDDge9xfDf1cOnifU5wjrTfJop7ilEOngk&height=960&width=640&expires=33289418766"],
+    images: ["https://opengraph.b-cdn.net/production/images/f389f443-ca86-4893-b616-2c33ce3901aa.png?token=mMxIb8BfXFIRFfVhWoquy6UOYjvOpyyiA1sayGZsLpg&height=630&width=1200&expires=33289419599"],
   },
 };
 
