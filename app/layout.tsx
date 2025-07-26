@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   icons: {
-    icon: "/loo.png",
+    icon: "/favicon.ico",
   },
   openGraph: {
     title: "Rolly Paredes - Full-Stack Developer & Designer",
